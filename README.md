@@ -20,7 +20,7 @@ program. They are optional plotting inputs used only to evaluate a recovery.
 
 AI Disclosure: We acknowledge the use of AI tools (in this case ChatGPT 5.6 Sol Ultra) in the creation of this package, mainly for software architecture and best practices, as well as documentation. The sampling algorithm for generating thermodynamically allowed distributions was also substantially improved (2+ orders of magnitude faster) from the initial algorithm used in our paper through an AI-generated suggestion. The author (Matthew Leighton) takes responsibility for the method and package.
 
-We have tested the package extensively on both toy datasets with few states, and the trp-cage dataset from MSM coarse-graining of extensive MD simulations used in the manuscript. We have not tested the package on other cryo-EM datasets, though we see no reason it will not work similarly well. If you test the package on a new dataset and find it performs poorly, we would be interested to know and understand why!
+Other Notes: We have tested the package on both toy datasets with few states, and the trp-cage dataset from MSM coarse-graining of extensive MD simulations used in the manuscript. We have not tested the package on other cryo-EM datasets, though we see no reason it will not work similarly well. If you test the package on a new dataset and find it performs poorly, we would be interested to know and understand why!
 
 Any questions should be directed to matthew.leighton@yale.edu.
 
