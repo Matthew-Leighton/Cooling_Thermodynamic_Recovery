@@ -17,6 +17,7 @@ Two command-line programs are provided:
 Hot- and cold-equilibrium reference files are never read by the inference
 program. They are optional plotting inputs used only to evaluate a recovery.
 
+We provide a python notebook showing a pedagogical example usage of the package on a toy dataset in the folder example_datasets.
 
 AI Disclosure: We acknowledge the use of AI tools (in this case ChatGPT 5.6 Sol Ultra) in the creation of this package, mainly for software architecture and best practices, as well as documentation. The sampling algorithm for generating thermodynamically allowed distributions was also substantially improved (2+ orders of magnitude faster) from the initial algorithm used in our paper through an AI-generated suggestion. The author (Matthew Leighton) takes responsibility for the method and package.
 
