@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "thermodynamic-cooling-inference"
+version = "0.1.0"
+description = "Thermodynamic inference of equilibrium state probabilities from cooled ensembles"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "matplotlib>=3.8,<4",
+    "numpy>=1.26,<3",
+    "pandas>=2.0,<3",
+    "scipy>=1.11,<2",
+]
+
+[project.scripts]
+thermodynamic-inference = "thermodynamic_inference:main"
+thermodynamic-recovery-plot = "plot_thermodynamic_recovery:main"
+
+[tool.setuptools]
+py-modules = ["thermodynamic_inference", "plot_thermodynamic_recovery"]

@@ -1,0 +1,3 @@
+include requirements.txt
+include requirements-reproducibility.txt
+recursive-include tests *.csv *.py

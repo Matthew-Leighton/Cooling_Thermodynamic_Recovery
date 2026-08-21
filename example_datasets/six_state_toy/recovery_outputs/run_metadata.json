@@ -1,0 +1,126 @@
+{
+  "accepted_cooled_draw_replay": null,
+  "cold_temperature": 100.0,
+  "command": [
+    "python",
+    "thermodynamic_inference.py",
+    "--cooled",
+    "example_datasets/six_state_toy/cooled_distributions.csv",
+    "--hot-temperature",
+    "500",
+    "--cold-temperature",
+    "100",
+    "--no-microstate-entropies",
+    "--output-dir",
+    "example_datasets/six_state_toy/recovery_outputs",
+    "--overwrite"
+  ],
+  "confidence_interval_fit": null,
+  "confidence_interval_model": null,
+  "cooled_input_file": "example_datasets/six_state_toy/cooled_distributions.csv",
+  "cooled_input_sha256": "2293bacbec5f9925243b850edc84a0ac599e1ff080e9c6e1e39b04d5c58ac474",
+  "cooling_distribution_count": 10,
+  "cooling_times": [
+    1000.0,
+    5000.0,
+    10000.0,
+    50000.0,
+    100000.0,
+    500000.0,
+    1000000.0,
+    5000000.0,
+    10000000.0,
+    50000000.0
+  ],
+  "entropy_bound": 0.0,
+  "entropy_gauge": "all zero",
+  "entropy_units": "k_B",
+  "estimator": {
+    "estimator": "center",
+    "selected_sample_count": 100000,
+    "selected_sample_fraction": 1.0,
+    "uncertainty_definition": "generated-sample standard deviation"
+  },
+  "hot_temperature": 500.0,
+  "method": "exact_simplex_qmc_rejection",
+  "microstate_entropies_enabled": false,
+  "n_samples": 100000,
+  "numpy_version": "1.26.4",
+  "pandas_version": "2.2.2",
+  "python_version": "3.12.7 | packaged by Anaconda, Inc. | (main, Oct  4 2024, 08:22:19) [Clang 14.0.6 ]",
+  "sampling": {
+    "elapsed_seconds": 65.26451066699519,
+    "raw_acceptance_fraction": 0.00021184018227906354,
+    "raw_accepted_count": 100403,
+    "total_proposals": 473956352
+  },
+  "scientific_interpretation": "Exact-input methods sample a fixed thermodynamic feasible region. The uncertainty-aware method produces proposal-dependent random projections and is neither a uniform feasible-region sample nor a Bayesian posterior.",
+  "scipy_version": "1.13.1",
+  "script_sha256": "d0b21b56f2803b40762f6ef28ae8f3a296be0a435cba781f11085f2c7978af3c",
+  "seed": 20260814,
+  "settings": {
+    "acceptance_tolerance": 1e-09,
+    "cold_logit_weight": 0.02,
+    "constraint_buffer": 1e-08,
+    "maximum_projection_attempt_factor": 20,
+    "maximum_projection_iterations": 300,
+    "maximum_simplex_proposals": 1000000000,
+    "mcmc_burn_in": 5000,
+    "mcmc_chains": null,
+    "mcmc_thin": 5,
+    "nearest_fraction": 0.1,
+    "proposal_concentration": 200.0,
+    "qmc_batch_power": 18,
+    "requested_exact_method": "auto",
+    "simplex_threshold": 6,
+    "write_sample_csv": false
+  },
+  "state_count": 6,
+  "state_labels": [
+    "state_1",
+    "state_2",
+    "state_3",
+    "state_4",
+    "state_5",
+    "state_6"
+  ],
+  "temperature_ratio_beta": 5.0,
+  "thermodynamic_constraints": {
+    "cooling_time_order": "ascending numeric cooling_time (smallest is fastest)",
+    "extra_probability_monotonicity": false,
+    "manuscript_equations": [
+      2,
+      3,
+      8,
+      9,
+      11,
+      12
+    ],
+    "monotonicity": [
+      "Sigma_cooling_upper_bound nondecreasing with cooling_time",
+      "Sigma_auxiliary nonincreasing with cooling_time"
+    ],
+    "second_law": [
+      "Sigma_cooling_upper_bound(tau) >= 0",
+      "Sigma_auxiliary(tau) >= 0"
+    ]
+  },
+  "uncertain_cooling_runs": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+  ],
+  "uncertainty_projection": null,
+  "validation": {
+    "maximum_probability_normalization_error": 0.0,
+    "minimum_saved_manuscript_margin": 6.122167399702505e-07
+  },
+  "workers": 8
+}
